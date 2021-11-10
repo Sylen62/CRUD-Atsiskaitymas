@@ -1,0 +1,24 @@
+{
+  "name": "crud-atsiskaitymas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-win": "node_modules\\.bin\\json-server --watch db.json",
+    "start-unix": "node_modules/.bin/json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylen62/CRUD-Atsiskaitymas.git"
+  },
+  "author": "Justas Peldžius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sylen62/CRUD-Atsiskaitymas/issues"
+  },
+  "homepage": "https://github.com/Sylen62/CRUD-Atsiskaitymas#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
