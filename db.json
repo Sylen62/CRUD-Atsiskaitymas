@@ -1,0 +1,115 @@
+{
+  "apartments": [
+    {
+      "id": "1",
+      "type": "house",
+      "owner": {
+        "fullname": "Namius Gyvauskas",
+        "email": "namiusgyv@benamis.lt",
+        "phone": "732219381"
+      },
+      "roomCount": 3,
+      "squares": 123,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lithuania",
+        "street": "Namo g.",
+        "number": "4"
+      },
+      "price": {
+        "amount": 300000,
+        "currency": "€"
+      },
+      "imgSrc": "https://c.tenor.com/BRG_BFFHOGIAAAAC/jesus-take-the-wheel-jesus-drive.gif"
+    },
+    {
+      "id": "2",
+      "type": "flat",
+      "owner": {
+        "fullname": "Ilgius Plokštauskas",
+        "email": "ilgiusplok@benamis.lt",
+        "phone": "84928349283"
+      },
+      "roomCount": 5,
+      "squares": 23,
+      "address": {
+        "city": "Plungė",
+        "country": "Lithuania",
+        "street": "Stalo g.",
+        "number": "56"
+      },
+      "price": {
+        "amount": 54000,
+        "currency": "$"
+      },
+      "imgSrc": "https://media4.giphy.com/media/QfJMyVVeAdnSC2e6HV/giphy.gif?cid=790b7611cc7cea56a8422af84124491bc397f89bcf5d4295&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": "3",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Sienius Kreivauskas",
+        "email": "sieniuskre@benamis.lt",
+        "phone": "7312034242"
+      },
+      "roomCount": 3,
+      "squares": 65,
+      "address": {
+        "city": "Utena",
+        "country": "Lithuania",
+        "street": "Liniuotės g.",
+        "number": "22"
+      },
+      "price": {
+        "amount": 87300,
+        "currency": "$"
+      },
+      "imgSrc": "https://c.tenor.com/TnFeuWudj-0AAAAC/tom-and-jerry-tom.gif"
+    },
+    {
+      "id": "4",
+      "type": "flat",
+      "owner": {
+        "fullname": "Agurkas Marinavičius",
+        "email": "iagurkasmar@benamis.lt",
+        "phone": "95684598345"
+      },
+      "roomCount": 2,
+      "squares": 32,
+      "address": {
+        "city": "Kaunas",
+        "country": "Lithuania",
+        "street": "Sloiniko g.",
+        "number": "6"
+      },
+      "price": {
+        "amount": 49320,
+        "currency": "€"
+      },
+      "imgSrc": "https://media4.giphy.com/media/1wqqlaQ7IX3TXibXZE/giphy.gif?cid=790b7611a79216c5c236bdb99b1afc5a28a407b9aadcad25&rid=giphy.gif&ct=g"
+    }
+    ,
+    {
+      "id": "5",
+      "type": "house",
+      "owner": {
+        "fullname": "Stalas Kėdauskas",
+        "email": "stalaskėd@benamis.lt",
+        "phone": "5123879128"
+      },
+      "roomCount": 7,
+      "squares": 223,
+      "address": {
+        "city": "Zarasai",
+        "country": "Lithuania",
+        "street": "Pievos g.",
+        "number": "55"
+      },
+      "price": {
+        "amount": 587330,
+        "currency": "€"
+      },
+      "imgSrc": "https://media3.giphy.com/media/em58ZB5VTDD7lnwKD9/giphy.gif?cid=790b7611935b9e29f8924b0339a4306b2bbe3db8d1a66309&rid=giphy.gif&ct=g"
+    }
+  ]
+}
