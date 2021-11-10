@@ -87,8 +87,7 @@
         "currency": "€"
       },
       "imgSrc": "https://media4.giphy.com/media/1wqqlaQ7IX3TXibXZE/giphy.gif?cid=790b7611a79216c5c236bdb99b1afc5a28a407b9aadcad25&rid=giphy.gif&ct=g"
-    }
-    ,
+    },
     {
       "id": "5",
       "type": "house",
@@ -110,6 +109,72 @@
         "currency": "€"
       },
       "imgSrc": "https://media3.giphy.com/media/em58ZB5VTDD7lnwKD9/giphy.gif?cid=790b7611935b9e29f8924b0339a4306b2bbe3db8d1a66309&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": "6",
+      "type": "house",
+      "owner": {
+        "fullname": "Vėžius Slidauskas",
+        "email": "vėžiussli@benamis.lt",
+        "phone": "72394872934"
+      },
+      "roomCount": 2,
+      "squares": 43,
+      "address": {
+        "city": "Šiauliai",
+        "country": "Lithuania",
+        "street": "Greičio g.",
+        "number": "99"
+      },
+      "price": {
+        "amount": 9820,
+        "currency": "$"
+      },
+      "imgSrc": "https://i.imgur.com/PoD0oq2.gif"
+    },
+    {
+      "id": "7",
+      "type": "house",
+      "owner": {
+        "fullname": "Bačius Plyšauskas",
+        "email": "bačiuspli@benamis.lt",
+        "phone": "912831293"
+      },
+      "roomCount": 3,
+      "squares": 67,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lithuania",
+        "street": "Betono g.",
+        "number": "1"
+      },
+      "price": {
+        "amount": 83452,
+        "currency": "$"
+      },
+      "imgSrc": "https://media1.giphy.com/media/l2blenzcLkFsQWpSDi/giphy.gif?cid=790b7611f106a7552f78da821758ae4eb11d94c32507c182&rid=giphy.gif&ct=g"
+    },
+    {
+      "id": "8",
+      "type": "flat",
+      "owner": {
+        "fullname": "Plonius Lindauskas",
+        "email": "ploniuslin@benamis.lt",
+        "phone": "123612123"
+      },
+      "roomCount": 1,
+      "squares": 13,
+      "address": {
+        "city": "Kaunas",
+        "country": "Lithuania",
+        "street": "Stačiakampio g.",
+        "number": "4A"
+      },
+      "price": {
+        "amount": 7734,
+        "currency": "€"
+      },
+      "imgSrc": "https://media3.giphy.com/media/G3773sSDJHHy0/giphy.gif?cid=790b7611484108f2215719dfdf5e95e9c2e6b874d8e90b6d&rid=giphy.gif&ct=g"
     }
   ]
 }

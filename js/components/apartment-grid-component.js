@@ -49,6 +49,9 @@ class ApartmentGridComponent {
 				card.htmlElement = this.wrapCard(card.htmlElement);
 				this.htmlElement.appendChild(card.htmlElement);
 			});
+		} else {
+			this.htmlElement.innerHTML =
+				'<div class="d-flex align-items-center justify-content-center text-white  fw-bold" style="height:100vh;">No data</div>';
 		}
 	};
 }
