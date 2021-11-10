@@ -13,4 +13,3 @@ $ npm i
 
 - $ npm run start-win
 - $ npm run start-unix
-  s
