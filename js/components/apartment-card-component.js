@@ -14,7 +14,7 @@ class ApartmentCardComponent {
 	};
 
 	convertCurrency = ({ currency, amount }) => {
-		if (currency === '$') return amount * ApartmentCardComponent.usdToEuro;
+		if (currency === '$') return Math.floor(amount * ApartmentCardComponent.usdToEuro);
 		else return amount;
 	};
 
@@ -35,7 +35,7 @@ class ApartmentCardComponent {
           <span class="card-text"><strong>Phone: </strong>${phone}</span>
         </div>
       </div>
-      <button class="btn btn-danger btn-sm position-absolute top-0 end-0 mt-2 me-2">✕</button>
+      <button class="btn btn-secondary btn-sm position-absolute top-0 end-0 mt-2 me-2">✕</button>
     `;
 
 		this.htmlElement.innerHTML = card;
