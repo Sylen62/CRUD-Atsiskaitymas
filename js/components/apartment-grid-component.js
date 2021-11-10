@@ -40,8 +40,8 @@ class ApartmentGridComponent {
 				'<div class="d-flex align-items-center justify-content-center" style="height:100vh;"><img src="assets/loading.gif" /></div>';
 		} else if (apartaments.length > 0) {
 			this.htmlElement.innerHTML = ``;
-			this.state.apartaments.forEach(() => {
-				const card = new ApartmentCardComponent();
+			this.state.apartaments.forEach((apartament) => {
+				const card = new ApartmentCardComponent(apartament);
 				card.htmlElement = this.wrapCard(card.htmlElement);
 				this.htmlElement.appendChild(card.htmlElement);
 			});
