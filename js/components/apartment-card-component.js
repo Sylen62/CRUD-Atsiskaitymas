@@ -19,7 +19,7 @@ class ApartmentCardComponent {
 	};
 
 	createCard = () => {
-		const { type, owner, roomCount, squares, address, price, imgSrc } = this.props;
+		const { id, type, owner, roomCount, squares, address, price, imgSrc } = this.props.data;
 		const { fullname, email, phone } = owner;
 		const card = `
       <img src="${imgSrc}" class="card-img-top" style="height:450px;object-fit: cover;" />
@@ -35,13 +35,17 @@ class ApartmentCardComponent {
           <span class="card-text"><strong>Phone: </strong>${phone}</span>
         </div>
       </div>
+      <button class="btn btn-danger btn-sm position-absolute top-0 end-0 mt-2 me-2">✕</button>
     `;
-		return card;
+
+		this.htmlElement.innerHTML = card;
+		const btn = this.htmlElement.querySelector('.btn');
+		btn.addEventListener('click', () => this.props.onDelete(id));
 	};
 
 	init = () => {
 		this.htmlElement = document.createElement('article');
 		this.htmlElement.className = 'card p-0 bg-dark text-white position-relative';
-		this.htmlElement.innerHTML = this.createCard();
+		this.createCard();
 	};
 }
