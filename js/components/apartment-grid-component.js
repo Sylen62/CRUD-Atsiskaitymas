@@ -2,6 +2,7 @@ class ApartmentGridComponent {
 	constructor() {
 		this.state = {
 			apartaments: [],
+			loading: false,
 		};
 
 		this.init();
@@ -10,25 +11,40 @@ class ApartmentGridComponent {
 	showError = (error) => console.error(error);
 
 	saveApartaments = (apartaments) => {
-		this.state = { apartaments };
+		this.state = { apartaments, loading: false };
 		this.render();
 	};
 
 	getApartaments = () =>
 		API.fetchApartments(this.saveApartaments, this.showError);
 
+	wrapCard = (element) => {
+		const wrapper = document.createElement('div');
+		wrapper.className = 'col-xs-12 col-sm-6 col-lg-4 col-xl-3';
+		wrapper.append(element);
+		return wrapper;
+	};
+
 	init = () => {
-		this.getApartaments();
+		this.state.loading = true;
+		setTimeout(this.getApartaments, 1000);
 		this.htmlElement = document.createElement('div');
+		this.htmlElement.className = 'row g-3';
 		this.render();
 	};
 
 	render = () => {
-		const { apartaments } = this.state;
-		if (apartaments.length === 0) {
-			this.htmlElement.innerHTML = `<h1>Siunčiama...</h1>`;
+		const { apartaments, loading } = this.state;
+		if (loading) {
+			this.htmlElement.innerHTML =
+				'<div class="d-flex align-items-center justify-content-center" style="height:100vh;"><img src="assets/loading.gif" /></div>';
 		} else if (apartaments.length > 0) {
-			this.htmlElement.innerHTML = `<h1>Parsiųsta!</h1>`;
+			this.htmlElement.innerHTML = ``;
+			this.state.apartaments.forEach(() => {
+				const card = new ApartmentCardComponent();
+				card.htmlElement = this.wrapCard(card.htmlElement);
+				this.htmlElement.appendChild(card.htmlElement);
+			});
 		}
 	};
 }
